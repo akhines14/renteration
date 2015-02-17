@@ -1,7 +1,11 @@
-<div class="jumbotron center" style="background-image: url(http://www.locksandtrinkets.com/wp-content/uploads/2014/12/nha-gia-re2.jpg); background-size: 100%; background-width: 100%; ">
-	<div class="container">	
-		<h1>Find your next apartment, on your terms.</h1>
-		<p> Stop searching for homes based on availability, and see what your city has to offer.</p>
-		<%= link_to "Learn more", "#" , class: "btn btn-success btn-lg" %></p>
-	</div>
-</div> 
+<div class="jumbotron center">
+     <h1>Welcome to my app!</h1>
+     <% if user_signed_in? %>
+          Let's get started
+     <% else %>
+       <p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+  <% end %>  
+</div>

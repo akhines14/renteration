@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
-Ruby '2.2.0'
-
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -12,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'devise', '~>3.0'
 
 group :development, :test do
   gem 'sqlite3'
